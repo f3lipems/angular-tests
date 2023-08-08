@@ -1,0 +1,5 @@
+<div class="like-wedget-container" (click)="like()" (keyup.enter)="like()">
+    <fa-icon [icon]="fonts.faThumbsUp" role="button" tabindex="0" size="1x" [attr.aria-describedby]="id"></fa-icon>
+    <span class="like-counter" [attr.id]="id" [attr.aria-label]="likes + 'people liked'" aria-live="true"
+        aria-atomic="true">{{ likes }}</span>
+</div>
